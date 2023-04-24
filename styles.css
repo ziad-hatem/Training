@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(216, 12%, 8%) !important;
+    font-family: 'Overpass';
+    color: white !important;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 15px; 
+}
+
+.container {
+    position: relative;
+    display: flex;
+    gap: 60px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 15px;
+    overflow: hidden;
+    width: 500px !important;
+    height: 470px !important;
+    background: linear-gradient(hsl(213, 19%, 17%),  hsl(216, 12%, 9%));
+}
+
+.container .rate-page {
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+
+.container .star {
+    margin: 30px 0 40px 25px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    background-color: hsl(213, 19%, 19%);
+}
+
+.container .text {
+    margin: 20px;
+}
+
+.container .text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.container .text p {
+    width: 400px;
+    font-size: 18px;
+    color: hsl(217, 12%, 63%);
+}
+
+.container .rate {
+    margin: 20px auto;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .rate input {
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.container .rate input:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.container .rate input.active {
+    color: white;
+    background-color: hsl(216, 12%, 54%);
+}
+
+.container .btn {
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+}
+
+.container button {
+    width: 90%;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    transition: 0.4s ease;
+    margin: 10px auto;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+}
+
+.container button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.container .thanks-page {
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+.container .thanks-page .image {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.container .thanks-page .selected {
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+.container .thanks-page .selected p {
+    padding: 5px 15px;
+    border-radius: 40px;
+    width: fit-content;
+    background-color: rgba(149, 158, 172, 10%);
+
+}
+.container .thanks-page .info {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .thanks-page .info h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .thanks-page .info p {
+    line-height: 30px;
+    width: 350px;
+}
+
+
+@media (max-width: 375px) {
+    .container {
+        width: 350px !important;
+        height: 470px !important;
+    }
+    .container .star {
+        margin: 15px 0 40px 20px;
+    }
+    .container .text {
+        width: 280px;
+    }
+    .container .text p {
+        width: 300px;
+    }
+    .container .thanks-page {
+        margin: 0 53px;
+    }
+}
